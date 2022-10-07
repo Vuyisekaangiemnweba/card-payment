@@ -1,0 +1,37 @@
+<html>
+<link rel="stylesheet" href="styles.css">
+<title>Smartpay</title>
+</head>
+<body>
+
+<div class="container">
+	<div class="center">
+		<div class="payment-box">
+			<h1 class="pay-h">Card Details</h1>
+
+			<form class="form" action="no.php">
+				<label for="Card Number">Card Number</label>
+
+				<input class="cc-number icon" maxlength="18" name="card-number" pattern="\d*" required placeholder="XXXX XXXX XXXX" type="tel">
+
+				<label for="Expiry Date">Expiry Date</label>
+				<input class="expiry-month icon" type="tel" maxlength="3" name="expiry-month" pattern="\d*" required placeholder="01">
+				<input class="expiry-year icon" type="tel" maxlength="5" name="expiry-year" pattern="\d*" required placeholder="0000">
+
+				<label for="CVV">CVV</label>
+				<input class="cvv icon" type="tel" maxlength="4" name="cvv" pattern="\d*" required placeholder="XXX">
+
+				<input class="card-holder icon" type="text" placeholder="Cardholder Name">
+
+				<button class="pay-now" type="submit">
+					<img src="pimage.jpg" alt="pimage"class="pay_icon" width="400" height="500">
+                    
+					<span class="pay_text">Pay Now</span>
+				</button>
+
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
